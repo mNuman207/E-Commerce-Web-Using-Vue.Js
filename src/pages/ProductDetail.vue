@@ -87,19 +87,17 @@
 <script>
 import TheHeader from "../components/layouts/TheHeader.vue";
 // import axios from "axios";
-// import axios from 'axios'
-
 export default {
   components: { TheHeader },
-  // TheHeader,
+  
   data() {
     return {
       list: undefined,
-      // products: [],
+      
       productId: this.$route.params.id,
       PDetail: {},
       response: null,
-      // product: {},
+     
     };
   },
   methods: {
@@ -114,17 +112,9 @@ export default {
   },
   mounted() {
     this.$store.dispatch("getProduct", this.productId);
-    // axios
-    //   .get(`https://dummyjson.com/products/${this.productId}`)
-    //   .then((resp) => {
-    //     const list = resp.data;
-    //     console.log(list);
-    //     this.products = list;
-    //   });
+   
   },
 };
-
-// name:'ProductDetail',
 </script>
 <style scoped>
 .text-bold {
@@ -193,4 +183,5 @@ text-color {
   font-size: 18px;
   color: white !important;
 }
+
 </style>

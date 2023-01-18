@@ -52,14 +52,11 @@ export default{
 
 <style scoped>
 body {
-  background-color: #eee;
+  background-color: rgb(131, 105, 105);
 }
 .my-card {
-  /* display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row; */
   min-width: 0;
-  background-color: rgb(189, 180, 180);
+  background-color: rgb(151, 91, 91);
   background-clip: border-box;
   box-shadow: 0px 0px 12px;
   margin-bottom: 28px;
@@ -68,7 +65,7 @@ body {
   transition: 0.5s;
 }
 .my-card:hover {
-  box-shadow: 0px 0px 8px #a83d51;
+  box-shadow: 0px 0px 8px #868585;
 }
 .my-card img {
   height: 250px;
@@ -76,11 +73,10 @@ body {
 }
 .my-card-body {
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .my-card-body h5 {
   text-transform: capitalize;
-  /* line-height: 25px; */
   font-size: 25px;
 }
 .my-card-body p {
